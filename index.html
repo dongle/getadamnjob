@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Get A Damn Job!</title>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/odometer/odometer.js"></script>
-    <script src="app.js"></script>
 
     <link rel="stylesheet" href="css/typeplate.css">
     <link rel="stylesheet" href="node_modules/odometer/themes/odometer-theme-minimal.css" />
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/odometer/odometer.js"></script>
+    <script src="node_modules/timbre/timbre.dev.js"></script>
+    <script src="node_modules/timbre/src/extras/MoogFF.js"></script>
+    <script src="js/subcollider.js"></script>
+    <script src="js/app.js"></script>
   </head>
   <body>
   <div id="container">
@@ -23,8 +27,10 @@
       <div id="snippet"></div>
     </div>
 
+    <div class="buttons">
     <button name="getJob" id="getJob" class="submitSucks">This Job Sucks!</button>
     <button name="likeJob" id="likeJob" class="submitLike">I Like This Job!</button>
+    </div>
 
     <div class="counter"><span class="odometer"></span> jobs sucked</div>
 

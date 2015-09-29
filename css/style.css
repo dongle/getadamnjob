@@ -10,7 +10,8 @@ body {
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  overflow: visible; }
 
 h1 {
   font-family: 'KnewaveOutlineRegular';
@@ -37,6 +38,7 @@ button {
   border: none;
   font-size: 20px;
   background: #3498db;
+  height: 50px;
   width: 200px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
