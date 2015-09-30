@@ -15,7 +15,6 @@ var params = {'v': '2', 'format': 'json', 'publisher': publisherID, 'limit': 1, 
 // API
 
 function getANewJob() {
-  counter++;
   $('.odometer').html(counter);
   params.start = counter;
   $.ajax({
@@ -38,15 +37,16 @@ function gotAJob(data) {
 
 $( document ).ready(function() {
     getANewJob();
-    initTimbre();
+    // initTimbre();
 
-    $(".player").mb_YTPlayer();
+    // $(".player").mb_YTPlayer();
 
     $('#start').click(function(){
       console.log("started");
     });
 
     $('#getJob').click(function(){
+      counter++;
       getANewJob();
     });
 

@@ -4,7 +4,10 @@
   "description": "yabum",
   "main": "index.js",
   "dependencies": {
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "timbre": "^14.11.25",
+    "odometer": "^0.4.7",
+    "jquery.mb.ytplayer": "^2.9.4"
   },
   "devDependencies": {
     "browser-sync": "^2.9.7",
