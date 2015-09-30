@@ -29,8 +29,8 @@ function getANewJob() {
 
 function gotAJob(data) {
   var job = data.results[0];
-  $('#title').html(job.company + " – " + job.jobtitle);
-  $('#snippet').html(job.snippet);
+  $('#title').text(job.company + " – " + job.jobtitle);
+  $('#snippet').text(job.snippet);
   url = job.url;
 }
 
@@ -39,6 +39,8 @@ function gotAJob(data) {
 $( document ).ready(function() {
     getANewJob();
     initTimbre();
+
+    $(".player").mb_YTPlayer();
 
     $('#start').click(function(){
       console.log("started");

@@ -6,15 +6,12 @@ html {
 
 body {
   color: #FFF;
-  // padding-top: 20px;
-  // padding-left: 5vw;
-  // margin: auto;
-  // width: 90vw;
-  // height: 90vh;
 }
 
 #container {
   position: absolute;
+  padding: 80px;
+  background-color: rgba(0,0,0,.66);
   top: 50%;
   left: 50%;
   margin-right: -50%;
@@ -51,24 +48,23 @@ button {
   font-size: 20px;
   background: #3498db;
   width: 200px;
-  padding: 10px 20px 10px 20px;
+  height: 50px;
   text-decoration: none;
   border-radius: 28px;
 }
 
 button.submitSucks {
-  background-color: #00FFFF;
-  background-image: linear-gradient(to bottom, #00ffff, #00c0c0);
+  background: linear-gradient(to bottom, #00ffff, #00c0c0);
   font-family: 'KnewaveRegular';
   margin-right: 20px;
 }
 
 button.submitLike {
-  background-color: #FFF;
-  background-image: linear-gradient(to bottom, #FF0000, #FFFFFF, #0000FF);
+  background: linear-gradient(to bottom, #FF0000, #FF0000 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #0000FF 66.66%, #0000FF);
   font-family: 'League Gothic';
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
+  font-size: 100%;
 }
 
 .counter {

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js"></script>
     <script src="node_modules/odometer/odometer.js"></script>
     <script src="node_modules/timbre/timbre.dev.js"></script>
     <script src="node_modules/timbre/src/extras/MoogFF.js"></script>
@@ -17,9 +18,11 @@
   </head>
   <body>
   <div id="container">
-<!--     <div id="intro">
-      <button name="start" id="start">Get A Damn Job!</button>
-    </div> -->
+
+  <!-- background movie -->
+  <a href="https://www.youtube.com/watch?v=A2_qgnUde0U" id="bgndVideo" class="player"
+  data-property= "{videoURL:'A2_qgnUde0U', containment:'body', showControls:false, autoPlay:true, loop:true,
+  vol:0, mute:true, startAt:0, opacity:1, addRaster:false, quality:'default', showYTLogo:'false', stopMovieOnBlur:'false'}" ></a>
 
     <h1>GET A DAMN JOB!</h1>
     <div id="job">
