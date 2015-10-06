@@ -38,6 +38,7 @@ h1 {
 
 button {
   border: none;
+  outline: none;
   font-size: 20px;
   background: #3498db;
   width: 200px;

@@ -37,9 +37,9 @@ function gotAJob(data) {
 
 $( document ).ready(function() {
     getANewJob();
-    // initTimbre();
+    initTimbre();
 
-    // $(".player").mb_YTPlayer();
+    $(".player").mb_YTPlayer();
 
     $('#start').click(function(){
       console.log("started");

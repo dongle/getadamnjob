@@ -1,0 +1,14 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+# REDIRECT ALT DOMAINS
+
+RewriteCond %{http_host} ^www.getadamnjob.us$ [nc]
+RewriteRule ^(.*)$ http://getadamnjob.us/$1 [r=301,l]
+
+# TURN AWAY SEMALT ET AL
+RewriteCond %{HTTP_REFERER} ^http://([^.]+\.)*semalt\.com [NC]
+RewriteRule (.*) http://www.semalt.com [R=301,L]
+
+RewriteCond %{HTTP_REFERER} ^http://([^.]+\.)*buttons-for-website\.com [NC]
+RewriteRule (.*) http://buttons-for-website.com [R=301,L]
